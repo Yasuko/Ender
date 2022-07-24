@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  python:
+    build: ./docker-files/python
+    volumes:
+      - ..:/root/work
+    tty: true
+    ports:
+      - "8888:8888"
+
+
